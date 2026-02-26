@@ -21,3 +21,18 @@
 ## 4. Testing
 - 모든 핵심 비즈니스 로직은 JUnit 5와 AssertJ를 이용한 단위 테스트를 포함해야 한다.
 - Controller 테스트는 `MockMvc`를 활용한다.
+
+## 5. Development Workflow
+
+### Speckit-Driven Development
+Use Speckit to define and manage development workflows. All work must be broken down into Plans and Tasks:
+- Define Plans for high-level features or epics
+- Break down Plans into actionable Tasks
+- Execute Tasks using `specify run`
+- Track progress and maintain task history
+- All Plans and Tasks must be version-controlled in the `.specify/` directory
+
+### Test-First Development
+- Write tests before implementation
+- Minimum 80% code coverage for agent logic
+- Integration tests for end-to-end conversation flows
